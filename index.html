@@ -32,6 +32,53 @@ var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function
 	<title>Brunched - Have Dinner With Strangers</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Open%20Sans&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans&#038;display=swap" /></noscript><link rel="preload" as="image" href="https://timeleft.com/wp-content/uploads/2023/08/logo_black.svg" fetchpriority="high">
 	<meta name="description" content="Looking to meet new people? Have dinner with 5 strangers, all matched by our algorithm. Every Wednesday night in your city." />
 	<link rel="canonical" href="https://timeleft.com/" />
+	<style>
+		body, .elementor-page {
+			background-color: #EAC891 !important; /* Light Beige/Tan background */
+			color: #ae431e !important; /* Dark Orange/Brown for general text */
+		}
+		.elementor-section, .elementor-container, .e-con, .e-con-inner { /* Common Elementor wrappers */
+			background-color: transparent !important; 
+		}
+		p, .elementor-widget-text-editor, .elementor-icon-list-text, .gform_description, .gform_title, label.gfield_label, .elementor-image-box-description, .eael-accordion-content p, .eael-accordion-content span {
+			color: #ae431e !important; 
+		}
+		h1, h2, h3, h4, h5, h6, .elementor-heading-title, .elementor-image-box-title, .eael-accordion-tab-title, .eael-accordion-header, .eael-accordion-header a {
+			color: #8a8635 !important; /* Olive Green for headings */
+		}
+		h1 span, h2 span, h3 span, h4 span, h5 span, h6 span, .elementor-heading-title span {
+			color: #D06224 !important; /* Orange for accent words in headings */
+		}
+		a, .elementor-button-link, .elementor-icon-box-title a, .elementor-post-info__terms-list a, a.elementor-item, .menu-item a {
+			color: #D06224 !important; /* Orange for links */
+		}
+		a:hover, .elementor-button-link:hover, .elementor-icon-box-title a:hover, a.elementor-item:hover, .menu-item a:hover {
+			color: #ae431e !important; /* Darker orange/brown for link hover */
+		}
+		.elementor-button, input[type="submit"].gform_button, .button.btn.btn-primary { /* General buttons */
+			background-color: #D06224 !important;
+			color: #EAC891 !important;
+			border: 1px solid #ae431e !important;
+		}
+		.elementor-button:hover, input[type="submit"].gform_button:hover, .button.btn.btn-primary:hover {
+			background-color: #ae431e !important;
+			color: #EAC891 !important;
+		}
+        .elementor-social-icon { /* Footer social icons */
+            background-color: #ae431e !important; 
+        }
+        .elementor-social-icon svg path { /* Make sure SVG icon itself is visible */
+             fill: #EAC891 !important;
+             stroke: #EAC891 !important;
+        }
+		#current-location svg path {
+		    stroke: #ae431e !important;
+		}
+		.gform_wrapper.gravity-theme .gfield_radio li label { color: #ae431e !important; } /* Gravity forms radio button labels */
+		.final-step h3, .final-step p { color: #8a8635 !important; } /* Quiz final step text */
+		.final-step a { color: #D06224 !important; }
+		.final-step a:hover { color: #ae431e !important; }
+	</style>
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Brunched - Have Dinner With Strangers" />
@@ -453,10 +500,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<div class="location-widget">		<div id="current-location" class="current-location" data-city="Dallas">
 			<a href="#map">
 				<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
-					<path d="M14.5 8.38235C14.5 12.2396 10.2825 14.8664 8.91943 15.6147C8.65593 15.7593 8.34407 15.7593 8.08057 15.6147C6.71747 14.8664 2.5 12.2396 2.5 8.38235C2.5 4.85294 5.40721 2.5 8.5 2.5C11.7 2.5 14.5 4.85294 14.5 8.38235Z" stroke="#181F32"/>
-					<circle cx="8.5026" cy="8.50016" r="2.16667" stroke="#181F32"/>
+					<path d="M14.5 8.38235C14.5 12.2396 10.2825 14.8664 8.91943 15.6147C8.65593 15.7593 8.34407 15.7593 8.08057 15.6147C6.71747 14.8664 2.5 12.2396 2.5 8.38235C2.5 4.85294 5.40721 2.5 8.5 2.5C11.7 2.5 14.5 4.85294 14.5 8.38235Z" stroke="#ae431e"/>
+					<circle cx="8.5026" cy="8.50016" r="2.16667" stroke="#ae431e"/>
 				</svg>
-				<span id="city-name">Dallas</span>
+				<span id="city-name" style="color: #ae431e !important;">Dallas</span>
 			</a>
 		</div>
 
@@ -499,7 +546,7 @@ for dinner. </h1>		</div>
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://apps.apple.com/app/timeleft-meet-new-people/id6466442949" target="_blank" rel="nofollow">
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M20.2364 6.90322C18.7914 8.34818 16.0504 7.94975 16.0504 7.94975C16.0504 7.94975 15.6518 5.20858 17.0969 3.76362C18.5418 2.31866 21.2829 2.71709 21.2829 2.71709C21.2829 2.71709 21.6814 5.45826 20.2364 6.90322Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path><path d="M5.33203 18.7458C5.33203 23.1214 8.26063 28.1471 11.2239 29.2093C12.2512 29.5774 13.3131 29.0693 14.1959 28.4366C14.8656 27.9566 15.6766 27.4982 16.3316 27.4982C16.9866 27.4982 17.7975 27.9566 18.4672 28.4366C19.35 29.0693 20.4119 29.5774 21.4392 29.2093C23.545 28.4546 25.6331 25.6985 26.6654 22.5965C24.6664 22.0239 23.2063 20.2153 23.2063 18.0726C23.2063 16.1095 24.4318 14.4269 26.1744 13.7182C25.0516 11.7242 23.2168 10.6667 21.1439 10.6667C20.0715 10.6667 19.0859 11.099 18.2898 11.6172C17.0191 12.4443 15.6442 12.4443 14.3734 11.6172C13.5772 11.099 12.5917 10.6667 11.5193 10.6667C8.10215 10.6667 5.33203 13.5402 5.33203 18.7458Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</a>
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M20.2364 6.90322C18.7914 8.34818 16.0504 7.94975 16.0504 7.94975C16.0504 7.94975 15.6518 5.20858 17.0969 3.76362C18.5418 2.31866 21.2829 2.71709 21.2829 2.71709C21.2829 2.71709 21.6814 5.45826 20.2364 6.90322Z" stroke="#ae431e" stroke-width="1.5" stroke-linejoin="round"></path><path d="M5.33203 18.7458C5.33203 23.1214 8.26063 28.1471 11.2239 29.2093C12.2512 29.5774 13.3131 29.0693 14.1959 28.4366C14.8656 27.9566 15.6766 27.4982 16.3316 27.4982C16.9866 27.4982 17.7975 27.9566 18.4672 28.4366C19.35 29.0693 20.4119 29.5774 21.4392 29.2093C23.545 28.4546 25.6331 25.6985 26.6654 22.5965C24.6664 22.0239 23.2063 20.2153 23.2063 18.0726C23.2063 16.1095 24.4318 14.4269 26.1744 13.7182C25.0516 11.7242 23.2168 10.6667 21.1439 10.6667C20.0715 10.6667 19.0859 11.099 18.2898 11.6172C17.0191 12.4443 15.6442 12.4443 14.3734 11.6172C13.5772 11.099 12.5917 10.6667 11.5193 10.6667C8.10215 10.6667 5.33203 13.5402 5.33203 18.7458Z" stroke="#ae431e" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</a>
 		</div>
 				</div>
 				</div>
@@ -507,7 +554,7 @@ for dinner. </h1>		</div>
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<a class="elementor-icon" href="https://play.google.com/store/apps/details?id=com.timeleft.app&#038;hl=fr&#038;gl=US" target="_blank" rel="nofollow">
-			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M29.1964 16.4657C28.6593 18.6582 25.8017 20.233 20.0862 23.3824C13.8701 26.8077 10.762 28.5205 8.24443 27.8606C7.39177 27.6372 6.60644 27.2441 5.94701 26.711C4 25.1371 4 21.8691 4 15.3333C4 8.7977 4 5.52987 5.94701 3.95577C6.60644 3.42264 7.39177 3.0297 8.24443 2.80621C10.762 2.14637 13.8701 3.85904 20.0862 7.28441C25.8017 10.4338 28.6593 12.0084 29.1964 14.2011C29.379 14.9471 29.379 15.7198 29.1964 16.4657Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path><path d="M7.33464 27.3333L25.3346 10.2744M6.66797 4L24.668 20.6667" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</a>
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M29.1964 16.4657C28.6593 18.6582 25.8017 20.233 20.0862 23.3824C13.8701 26.8077 10.762 28.5205 8.24443 27.8606C7.39177 27.6372 6.60644 27.2441 5.94701 26.711C4 25.1371 4 21.8691 4 15.3333C4 8.7977 4 5.52987 5.94701 3.95577C6.60644 3.42264 7.39177 3.0297 8.24443 2.80621C10.762 2.14637 13.8701 3.85904 20.0862 7.28441C25.8017 10.4338 28.6593 12.0084 29.1964 14.2011C29.379 14.9471 29.379 15.7198 29.1964 16.4657Z" stroke="#ae431e" stroke-width="1.5" stroke-linejoin="round"></path><path d="M7.33464 27.3333L25.3346 10.2744M6.66797 4L24.668 20.6667" stroke="#ae431e" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</a>
 		</div>
 				</div>
 				</div>
@@ -519,8 +566,8 @@ for dinner. </h1>		</div>
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://apps.apple.com/app/timeleft-meet-new-people/id6466442949" target="_blank" rel="nofollow">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="apple"><path id="Vector" d="M15.1773 5.17735C14.0936 6.26107 12.0378 5.96225 12.0378 5.96225C12.0378 5.96225 11.7389 3.90637 12.8227 2.82265C13.9064 1.73893 15.9622 2.03775 15.9622 2.03775C15.9622 2.03775 16.2611 4.09363 15.1773 5.17735Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"></path><path id="Vector_2" d="M4 14.0593C4 17.341 6.19645 21.1103 8.41889 21.9069C9.1894 22.183 9.98578 21.8019 10.6479 21.3274C11.1502 20.9674 11.7584 20.6236 12.2497 20.6236C12.7409 20.6236 13.3491 20.9674 13.8514 21.3274C14.5135 21.8019 15.3099 22.183 16.0804 21.9069C17.6597 21.3409 19.2258 19.2738 20 16.9473C18.5008 16.5179 17.4057 15.1614 17.4057 13.5544C17.4057 12.0821 18.3248 10.8201 19.6318 10.2886C18.7897 8.79309 17.4136 8 15.8589 8C15.0546 8 14.3154 8.32422 13.7183 8.71286C12.7653 9.33314 11.7341 9.33315 10.781 8.71286C10.1839 8.32422 9.44473 8 8.64044 8C6.07759 8 4 10.1551 4 14.0593Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"></path></g></svg>			</span>
-									<span class="elementor-button-text">Download the app</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><g id="apple"><path id="Vector" d="M15.1773 5.17735C14.0936 6.26107 12.0378 5.96225 12.0378 5.96225C12.0378 5.96225 11.7389 3.90637 12.8227 2.82265C13.9064 1.73893 15.9622 2.03775 15.9622 2.03775C15.9622 2.03775 16.2611 4.09363 15.1773 5.17735Z" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path><path id="Vector_2" d="M4 14.0593C4 17.341 6.19645 21.1103 8.41889 21.9069C9.1894 22.183 9.98578 21.8019 10.6479 21.3274C11.1502 20.9674 11.7584 20.6236 12.2497 20.6236C12.7409 20.6236 13.3491 20.9674 13.8514 21.3274C14.5135 21.8019 15.3099 22.183 16.0804 21.9069C17.6597 21.3409 19.2258 19.2738 20 16.9473C18.5008 16.5179 17.4057 15.1614 17.4057 13.5544C17.4057 12.0821 18.3248 10.8201 19.6318 10.2886C18.7897 8.79309 17.4136 8 15.8589 8C15.0546 8 14.3154 8.32422 13.7183 8.71286C12.7653 9.33314 11.7341 9.33315 10.781 8.71286C10.1839 8.32422 9.44473 8 8.64044 8C6.07759 8 4 10.1551 4 14.0593Z" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path></g></svg>			</span>
+									<span class="elementor-button-text" style="color: #EAC891 !important;">Download the app</span>
 					</span>
 					</a>
 		</div>
@@ -532,8 +579,8 @@ for dinner. </h1>		</div>
 			<a class="elementor-button elementor-button-link elementor-size-sm" href="https://play.google.com/store/apps/details?id=com.timeleft.app&#038;hl=fr&#038;gl=US" target="_blank" rel="nofollow">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon elementor-align-icon-left">
-				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M29.1964 16.4657C28.6593 18.6582 25.8017 20.233 20.0862 23.3824C13.8701 26.8077 10.762 28.5205 8.24443 27.8606C7.39177 27.6372 6.60644 27.2441 5.94701 26.711C4 25.1371 4 21.8691 4 15.3333C4 8.7977 4 5.52987 5.94701 3.95577C6.60644 3.42264 7.39177 3.0297 8.24443 2.80621C10.762 2.14637 13.8701 3.85904 20.0862 7.28441C25.8017 10.4338 28.6593 12.0084 29.1964 14.2011C29.379 14.9471 29.379 15.7198 29.1964 16.4657Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path><path d="M7.33464 27.3333L25.3346 10.2744M6.66797 4L24.668 20.6667" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</span>
-									<span class="elementor-button-text">Download the app</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M29.1964 16.4657C28.6593 18.6582 25.8017 20.233 20.0862 23.3824C13.8701 26.8077 10.762 28.5205 8.24443 27.8606C7.39177 27.6372 6.60644 27.2441 5.94701 26.711C4 25.1371 4 21.8691 4 15.3333C4 8.7977 4 5.52987 5.94701 3.95577C6.60644 3.42264 7.39177 3.0297 8.24443 2.80621C10.762 2.14637 13.8701 3.85904 20.0862 7.28441C25.8017 10.4338 28.6593 12.0084 29.1964 14.2011C29.379 14.9471 29.379 15.7198 29.1964 16.4657Z" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path><path d="M7.33464 27.3333L25.3346 10.2744M6.66797 4L24.668 20.6667" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path></svg>			</span>
+									<span class="elementor-button-text" style="color: #EAC891 !important;">Download the app</span>
 					</span>
 					</a>
 		</div>
@@ -619,7 +666,7 @@ for dinner. </h1>		</div>
 			<style>/*! elementor - v3.21.0 - 26-05-2024 */
 .elementor-widget-image-carousel .swiper,.elementor-widget-image-carousel .swiper-container{position:static}.elementor-widget-image-carousel .swiper-container .swiper-slide figure,.elementor-widget-image-carousel .swiper .swiper-slide figure{line-height:inherit}.elementor-widget-image-carousel .swiper-slide{text-align:center}.elementor-image-carousel-wrapper:not(.swiper-container-initialized):not(.swiper-initialized) .swiper-slide{max-width:calc(100% / var(--e-image-carousel-slides-to-show, 3))}</style>        <div class="elementor-image-carousel-wrapper swiper" dir="ltr">
             <div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-                                <div class="swiper-slide"><figure class="swiper-slide-inner"><img width="229" height="72" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20229%2072'%3E%3C/svg%3E" alt="Vice.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/Vice.png"><noscript><img width="229" height="72" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/Vice.png" alt="Vice.png" title=""></noscript></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img width="352" height="72" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20352%2072'%3E%3C/svg%3E" alt="Cosmopolitan.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/Cosmopolitan.png"><noscript><img width="352" height="72" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/Cosmopolitan.png" alt="Cosmopolitan.png" title=""></noscript></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img width="178" height="72" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20178%2072'%3E%3C/svg%3E" alt="Elle.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/Elle.png"><noscript><img width="178" height="72" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/Elle.png" alt="Elle.png" title=""></noscript></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img width="157" height="72" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20157%2072'%3E%3C/svg%3E" alt="CNN.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/CNN.png"><noscript><img width="157" height="72" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/CNN.png" alt="CNN.png" title=""></noscript></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img width="400" height="225" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20400%20225'%3E%3C/svg%3E" alt="Business-Insider-Logo-1.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/Business-Insider-Logo-1.png"><noscript><img width="400" height="225" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/Business-Insider-Logo-1.png" alt="Business-Insider-Logo-1.png" title=""></noscript></figure></div><div class="swiper-slide"><figure class="swiper-slide-inner"><img width="190" height="72" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20190%2072'%3E%3C/svg%3E" alt="Time-out.png" title="" data-lazy-src="https://timeleft.com/wp-content/uploads/2025/02/Time-out.png"><noscript><img width="190" height="72" decoding="async" class="swiper-slide-image" src="https://timeleft.com/wp-content/uploads/2025/02/Time-out.png" alt="Time-out.png" title=""></noscript></figure></div>            </div>
+                </div>
                                                                 </div>
         		</div>
 				</div>
@@ -637,7 +684,7 @@ We plan everything, just show up!</p>		</div>
 				</div>
 				<div class="elementor-element elementor-element-d3c749a ss-it-work elementor-widget elementor-widget-timeleft-steps" data-id="d3c749a" data-element_type="widget" data-widget_type="timeleft-steps.default">
 				<div class="elementor-widget-container">
-			<div class="steps-container"><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Take our quick personality test" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-4.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-4.jpg" alt="Take our quick personality test"></noscript><div class="group-content" style="background-color: #F59D24;"><div class="step-number" style="background-color: #F59D24;">1</div><h3>Take our quick personality test</h3><p>Complete a quick personality test and let our algorithm do the rest.<br><br></p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="We match you with 5 strangers" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-5.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-5.jpg" alt="We match you with 5 strangers"></noscript><div class="group-content" style="background-color: #00A089;"><div class="step-number" style="background-color: #00A089;">2</div><h3>We match you with 5 strangers</h3><p>Our algorithm selects 5 compatible humans for an engaging evening and meaningful conversations.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="We book and organize" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-2.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-2.jpg" alt="We book and organize"></noscript><div class="group-content" style="background-color: #FF6C7A;"><div class="step-number" style="background-color: #FF6C7A;">3</div><h3>We book and organize</h3><p>We provide everything you need to have a great night: insights into your group and your restaurant details.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Show up, dive into a unique experience" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-3.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-3.jpg" alt="Show up, dive into a unique experience"></noscript><div class="group-content" style="background-color: #008073;"><div class="step-number" style="background-color: #008073;">4</div><h3>Show up, dive into a unique experience</h3><p>Break the ice with our game and create genuine connections with like-minded strangers.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Rate your experience, stay connected" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-4.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-4.jpg" alt="Rate your experience, stay connected"></noscript><div class="group-content" style="background-color: #F59D24;"><div class="step-number" style="background-color: #F59D24;">5</div><h3>Rate your experience, stay connected</h3><p>Choose who you want to stay connected with. If it's mutual, start chatting and keep the conversation flowing.</p></div></div></div>		</div>
+			<div class="steps-container"><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Take our quick personality test" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-4.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-4.jpg" alt="Take our quick personality test"></noscript><div class="group-content" style="background-color: #D06224;"><div class="step-number" style="background-color: #D06224;">1</div><h3>Take our quick personality test</h3><p>Complete a quick personality test and let our algorithm do the rest.<br><br></p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="We match you with 5 strangers" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-5.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/how-it-works-5.jpg" alt="We match you with 5 strangers"></noscript><div class="group-content" style="background-color: #8a8635;"><div class="step-number" style="background-color: #8a8635;">2</div><h3>We match you with 5 strangers</h3><p>Our algorithm selects 5 compatible humans for an engaging evening and meaningful conversations.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="We book and organize" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-2.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-2.jpg" alt="We book and organize"></noscript><div class="group-content" style="background-color: #ae431e;"><div class="step-number" style="background-color: #ae431e;">3</div><h3>We book and organize</h3><p>We provide everything you need to have a great night: insights into your group and your restaurant details.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Show up, dive into a unique experience" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-3.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-3.jpg" alt="Show up, dive into a unique experience"></noscript><div class="group-content" style="background-color: #ae431e;"><div class="step-number" style="background-color: #ae431e;">4</div><h3>Show up, dive into a unique experience</h3><p>Break the ice with our game and create genuine connections with like-minded strangers.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Rate your experience, stay connected" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-4.jpg"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/restaurant-4.jpg" alt="Rate your experience, stay connected"></noscript><div class="group-content" style="background-color: #D06224;"><div class="step-number" style="background-color: #D06224;">5</div><h3>Rate your experience, stay connected</h3><p>Choose who you want to stay connected with. If it's mutual, start chatting and keep the conversation flowing.</p></div></div></div>		</div>
 				</div>
 				<div class="elementor-element elementor-element-1394a47 elementor-widget-tablet__width-initial elementor-mobile-align-center elementor-align-center btn-book-my-seat elementor-widget elementor-widget-button" data-id="1394a47" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -671,23 +718,14 @@ We plan everything, just show up!</p>		</div>
 				</div>
 				<div class="elementor-element elementor-element-093cc97 elementor-widget elementor-widget-timeleft-leafletmap" data-id="093cc97" data-element_type="widget" data-widget_type="timeleft-leafletmap.default">
 				<div class="elementor-widget-container">
-			        <div id="search-container" data-coordinates='[28.6139, 77.2090]' data-countries_cities='[
-    {
-        &quot;country&quot;: &quot;India&quot;,
-        &quot;cities&quot;: [
-            {&quot;name&quot;: &quot;Mumbai&quot;, &quot;coordinates&quot;: [19.0760, 72.8777]},
-            {&quot;name&quot;: &quot;Bengaluru&quot;, &quot;coordinates&quot;: [12.9716, 77.5946]},
-            {&quot;name&quot;: &quot;New Delhi&quot;, &quot;coordinates&quot;: [28.6139, 77.2090]}
-        ]
-    }
-]' data-language="ENGLISH">
+			        <div id="search-container" data-coordinates='[28.6139, 77.2090]' data-countries_cities='[{ &quot;country&quot;: &quot;India&quot;, &quot;cities&quot;: [{&quot;name&quot;: &quot;Mumbai&quot;, &quot;coordinates&quot;: [19.0760, 72.8777]}, {&quot;name&quot;: &quot;Bengaluru&quot;, &quot;coordinates&quot;: [12.9716, 77.5946]}, {&quot;name&quot;: &quot;New Delhi&quot;, &quot;coordinates&quot;: [28.6139, 77.2090]}] }]' data-language="ENGLISH">
             <div class="wrraper-search-map">
                 <div class="group-box-search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <circle cx="11" cy="11" r="7" stroke="#181F32" stroke-width="2" />
-                        <path d="M20 20L17 17" stroke="#181F32" stroke-width="2" stroke-linecap="round" />
+                        <circle cx="11" cy="11" r="7" stroke="#ae431e" stroke-width="2" />
+                        <path d="M20 20L17 17" stroke="#ae431e" stroke-width="2" stroke-linecap="round" />
                     </svg>
-                    <input type="text" id="search-input" placeholder="Search for your city">
+                    <input type="text" id="search-input" placeholder="Search for your city" style="color: #ae431e !important;">
                     <input type="submit" id="submit" value=" ">
                 </div>
                 <div class="group-search">
@@ -696,10 +734,10 @@ We plan everything, just show up!</p>		</div>
                 </div>
                 <div class="detail">
                     <div>
-						Countries                        <strong>60</strong>
+						Country                        <strong>1</strong>
                     </div>
                     <div>
-						Cities                        <strong>300</strong>
+						Cities                        <strong>3</strong>
                     </div>
                 </div>
             </div>
@@ -710,7 +748,7 @@ We plan everything, just show up!</p>		</div>
             <div class="box-waraper">
                 <div class="title">
                     <button class="lityclose" type="button" aria-label="Close (Press escape to close)" data-lity-close="">
-                        <img width="32" height="32" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3C/svg%3E" data-lity-close alt="icon close" data-lazy-src="https://timeleft.com/wp-content/themes/hello-elementor/dists/images/cancel-01.svg"/><noscript><img width="32" height="32" decoding="async" src="https://timeleft.com/wp-content/themes/hello-elementor/dists/images/cancel-01.svg" data-lity-close alt="icon close"/></noscript>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M25.3347 6.66663L6.66797 25.3333M6.66797 6.66663L25.3347 25.3333" stroke="#ae431e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                     </button>
                 </div>
                 <div class="form">
@@ -897,7 +935,7 @@ gform.initializeOnLoaded( function() {gformInitSpinner( 3, 'https://timeleft.com
 				</div>
 				<div class="elementor-element elementor-element-2e5c8dd ss-slider-res elementor-widget elementor-widget-timeleft-steps" data-id="2e5c8dd" data-element_type="widget" data-widget_type="timeleft-steps.default">
 				<div class="elementor-widget-container">
-			<div class="steps-container"><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="A wide selection to match your budget" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-1.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-1.png" alt="A wide selection to match your budget"></noscript><div class="group-content" style="background-color: #FF6C7A;"><div class="step-number" style="background-color: #FF6C7A;">1</div><h3>A wide selection to match your budget</h3><p>Many options, friendly to your wallet.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Options to fit your dietary choices" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-2.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-2.png" alt="Options to fit your dietary choices"></noscript><div class="group-content" style="background-color: #F59D24;"><div class="step-number" style="background-color: #F59D24;">2</div><h3>Options to fit your dietary choices</h3><p>Satisfying every palate, one dish at a time!</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Top Rated restaurants only " data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-3.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-3.png" alt="Top Rated restaurants only "></noscript><div class="group-content" style="background-color: #00A089;"><div class="step-number" style="background-color: #00A089;">3</div><h3>Top Rated restaurants only </h3><p>Handpicked and user-approved thanks to feedback.</p></div></div></div>		</div>
+			<div class="steps-container"><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="A wide selection to match your budget" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-1.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-1.png" alt="A wide selection to match your budget"></noscript><div class="group-content" style="background-color: #ae431e;"><div class="step-number" style="background-color: #ae431e;">1</div><h3>A wide selection to match your budget</h3><p>Many options, friendly to your wallet.</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Options to fit your dietary choices" data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-2.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-2.png" alt="Options to fit your dietary choices"></noscript><div class="group-content" style="background-color: #D06224;"><div class="step-number" style="background-color: #D06224;">2</div><h3>Options to fit your dietary choices</h3><p>Satisfying every palate, one dish at a time!</p></div></div><div class="step-item"><img width="354" height="540" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20354%20540'%3E%3C/svg%3E" alt="Top Rated restaurants only " data-lazy-src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-3.png"><noscript><img width="354" height="540" decoding="async" src="https://timeleft.com/wp-content/uploads/2024/06/img-restaurants-3.png" alt="Top Rated restaurants only "></noscript><div class="group-content" style="background-color: #8a8635;"><div class="step-number" style="background-color: #8a8635;">3</div><h3>Top Rated restaurants only </h3><p>Handpicked and user-approved thanks to feedback.</p></div></div></div>		</div>
 				</div>
 				<div class="elementor-element elementor-element-28fae6a elementor-widget-tablet__width-initial elementor-mobile-align-center elementor-align-center btn-book-my-seat elementor-widget elementor-widget-button" data-id="28fae6a" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -1077,7 +1115,7 @@ STRANGER”</div>		</div>
 				</div>
 				</div>
 				<footer data-elementor-type="footer" data-elementor-id="282" class="elementor elementor-282 elementor-location-footer" data-elementor-post-type="elementor_library">
-			<footer class="elementor-element elementor-element-8d4770a footer-new-style e-flex e-con-boxed e-con e-parent" data-id="8d4770a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}">
+			<footer class="elementor-element elementor-element-8d4770a footer-new-style e-flex e-con-boxed e-con e-parent" data-id="8d4770a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;}" style="background-color: #8a8635 !important;">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-0a0781e e-con-full e-flex e-con e-child" data-id="0a0781e" data-element_type="container">
 		<div class="elementor-element elementor-element-b1ddaa6 e-con-full e-flex e-con e-child" data-id="b1ddaa6" data-element_type="container">
@@ -1368,12 +1406,12 @@ STRANGER”</div>		</div>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-31ffc22" href="https://www.instagram.com/timeleft" target="_blank">
 						<span class="elementor-screen-only"></span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M3.33203 15.9999C3.33203 10.0288 3.33203 7.04324 5.18702 5.18824C7.04202 3.33325 10.0276 3.33325 15.9987 3.33325C21.9698 3.33325 24.9554 3.33325 26.8104 5.18824C28.6654 7.04324 28.6654 10.0288 28.6654 15.9999C28.6654 21.971 28.6654 24.9566 26.8104 26.8117C24.9554 28.6666 21.9698 28.6666 15.9987 28.6666C10.0276 28.6666 7.04202 28.6666 5.18702 26.8117C3.33203 24.9566 3.33203 21.971 3.33203 15.9999Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"></path><path d="M22 16C22 19.3137 19.3137 22 16 22C12.6863 22 10 19.3137 10 16C10 12.6863 12.6863 10 16 10C19.3137 10 22 12.6863 22 16Z" stroke="white" stroke-width="1.5"></path><path d="M23.344 8.66675H23.332" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>					</a>
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M3.33203 15.9999C3.33203 10.0288 3.33203 7.04324 5.18702 5.18824C7.04202 3.33325 10.0276 3.33325 15.9987 3.33325C21.9698 3.33325 24.9554 3.33325 26.8104 5.18824C28.6654 7.04324 28.6654 10.0288 28.6654 15.9999C28.6654 21.971 28.6654 24.9566 26.8104 26.8117C24.9554 28.6666 21.9698 28.6666 15.9987 28.6666C10.0276 28.6666 7.04202 28.6666 5.18702 26.8117C3.33203 24.9566 3.33203 21.971 3.33203 15.9999Z" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path><path d="M22 16C22 19.3137 19.3137 22 16 22C12.6863 22 10 19.3137 10 16C10 12.6863 12.6863 10 16 10C19.3137 10 22 12.6863 22 16Z" stroke="#EAC891" stroke-width="1.5"></path><path d="M23.344 8.66675H23.332" stroke="#EAC891" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>					</a>
 				</span>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon- elementor-repeater-item-993ef04" href="https://facebook.com/timeleftapp" target="_blank">
 						<span class="elementor-screen-only"></span>
-						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.24373 13.7778C6.94005 13.7778 6.66797 14.0337 6.66797 15.2593V17.4815C6.66797 18.7073 6.94005 18.963 8.24373 18.963H11.3952V27.8519C11.3952 29.0775 11.6673 29.3334 12.971 29.3334H16.1225C17.4262 29.3334 17.6982 29.0775 17.6982 27.8519V18.963H21.2369C22.2257 18.963 22.4805 18.7823 22.7521 17.8886L23.4274 15.6663C23.8926 14.1353 23.606 13.7778 21.9122 13.7778H17.6982V10.0742C17.6982 9.25596 18.4037 8.59267 19.274 8.59267H23.7589C25.0625 8.59267 25.3346 8.33687 25.3346 7.11119V4.14823C25.3346 2.92255 25.0625 2.66675 23.7589 2.66675H19.274C14.9226 2.66675 11.3952 5.98316 11.3952 10.0742V13.7778H8.24373Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"></path></svg>					</a>
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.24373 13.7778C6.94005 13.7778 6.66797 14.0337 6.66797 15.2593V17.4815C6.66797 18.7073 6.94005 18.963 8.24373 18.963H11.3952V27.8519C11.3952 29.0775 11.6673 29.3334 12.971 29.3334H16.1225C17.4262 29.3334 17.6982 29.0775 17.6982 27.8519V18.963H21.2369C22.2257 18.963 22.4805 18.7823 22.7521 17.8886L23.4274 15.6663C23.8926 14.1353 23.606 13.7778 21.9122 13.7778H17.6982V10.0742C17.6982 9.25596 18.4037 8.59267 19.274 8.59267H23.7589C25.0625 8.59267 25.3346 8.33687 25.3346 7.11119V4.14823C25.3346 2.92255 25.0625 2.66675 23.7589 2.66675H19.274C14.9226 2.66675 11.3952 5.98316 11.3952 10.0742V13.7778H8.24373Z" stroke="#EAC891" stroke-width="1.5" stroke-linejoin="round"></path></svg>					</a>
 				</span>
 							<span class="elementor-grid-item">
 					<a class="elementor-icon elementor-social-icon elementor-social-icon-x-twitter elementor-repeater-item-f040ba4" href="https://x.com/apptimeleft" target="_blank">
@@ -1581,7 +1619,7 @@ setInterval(setCountdown, 1000);;</script>	<!-- One of package-->
 			<div class="title">
 				<button class="lityclose" type="button" aria-label="Close (Press escape to close)" data-lity-close="">
 					<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-						<path d="M25.3347 6.66663L6.66797 25.3333M6.66797 6.66663L25.3347 25.3333" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+						<path d="M25.3347 6.66663L6.66797 25.3333M6.66797 6.66663L25.3347 25.3333" stroke="#ae431e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
 					</svg>
 				</button>
 				<h3>confirm your order</h3>

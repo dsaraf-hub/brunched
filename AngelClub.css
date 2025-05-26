@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Angel Club';
+    src: url('fonts/AngelClub-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Angel Club';
+    src: url('fonts/AngelClub-Slanted.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Angel Club Shadow';
+    src: url('fonts/AngelClub-Shadow.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Angel Club', serif;
+    color: #ae431e;
+    background-color: #EAC891;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #D06224;
+}
+a, button {
+    color: #D06224;
+}
+.btn, button {
+    background-color: #8a8635;
+    color: #EAC891;
+}

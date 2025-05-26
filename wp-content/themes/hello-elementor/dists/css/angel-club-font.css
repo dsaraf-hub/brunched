@@ -1,0 +1,57 @@
+/* Angel Club Font Definitions */
+
+@font-face {
+    font-family: 'Angel Club';
+    src: url('../fonts/angel-club/AngelClub-0WMKP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Apply Angel Club font globally */
+body {
+    font-family: 'Angel Club', serif;
+    color: #ae431e; /* Dark Orange/Brown for body text */
+}
+
+h1, h2, h3, h4, h5, h6,
+.elementor-heading-title, /* Common Elementor heading class */
+.elementor-button-text, /* Common Elementor button text class */
+.elementor-widget-text-editor p, /* Elementor text editor paragraphs */
+.elementor-testimonial-content, /* Elementor testimonial content */
+.elementor-icon-list-text, /* Elementor icon list text */
+.elementor-post-info__terms-list a, /* Elementor post info terms */
+.elementor-price-table__heading, /* Elementor price table heading */
+.elementor-price-table__subheading, /* Elementor price table subheading */
+.elementor-price-table__price, /* Elementor price table price */
+.elementor-price-table__period, /* Elementor price table period */
+.eael-accordion-tab-title, /* Essential Addons accordion title */
+.menu-item a.elementor-item /* Main navigation items */
+{
+    font-family: 'Angel Club', serif !important; /* Using !important to ensure override if necessary, given the Elementor context */
+    color: #8a8635; /* Olive Green for headings and prominent text elements */
+}
+
+/* Emulate slanted style where appropriate (example, can be refined) */
+/* You might need to identify specific classes later that need to be slanted. */
+em, i, .elementor-icon-box-description i /* Example for icons or emphasized text */ {
+    font-family: 'Angel Club', serif !important;
+    font-style: italic;
+    color: #8a8635; /* Olive Green for emphasis */
+}
+
+/* Emulate shadow style where appropriate (example, can be refined) */
+/* You might need to identify specific classes later that need a shadow. */
+.text-with-shadow /* Example class, or apply to specific heading if needed */ {
+    font-family: 'Angel Club', serif !important;
+    text-shadow: 1px 1px 2px #ae431e; /* Dark Orange/Brown for text shadow, less transparent */
+}
+
+/* Links */
+a {
+    color: #D06224; /* Orange for links */
+}
+
+a:hover {
+    color: #ae431e; /* Darker orange/brown for link hover */
+}
